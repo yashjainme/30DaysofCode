@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinja2 Conditionals</title>
+</head>
+<body>
+    <h1>Conditional in Jinja2</h1>
+    {%if company %}
+    <h2>{{company}} Products</h2>
+    <ul>
+        <li>iPhone</li>
+        <li>iMac</li>
+        <li>iPad</li>
+    </ul>
+    {%else %}
+    <h2>{{company}} products not available</h2>
+    {%endif%}
+</body>
+</html>

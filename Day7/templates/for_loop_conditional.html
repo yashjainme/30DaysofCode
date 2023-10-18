@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>For loop and Conditional</title>
+</head>
+
+<body>
+    {%for user, os in users.items() %}
+        {%if os == "Windows"%}
+        <h1>{{user}} is {{os}} user</h1>
+        {%elif os == "Mac"%}
+        <h1>{{user}} is {{os}} user</h1>
+        {%elif os == "Linux"%}
+        <h1>{{user}} is {{os}} user</h1>
+        {%else%}
+        <h1>This{{os}} is not present.</h1>
+        {%endif%}
+    {%endfor%}
+</body>
+
+</html>
