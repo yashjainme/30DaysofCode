@@ -1,0 +1,31 @@
+Requirements to run "app.py"
+ 
+
+To create virtual env
+virtualenv env
+
+To enter env
+.\env\Scripts\activate.ps1 
+
+First install flask
+pip install Flask
+pip install pymongo[srv]
+
+Now code
+
+To run code
+
+For powershell
+$env:FLASK_APP = "app.py"
+$env:FLASK_DEBUG = 1     
+flask run
+
+For bash
+export FLASK_APP = "app.py"
+export FLASK_DEBUG = 1     
+flask run
+
+for cmd.exe
+set FLASK_APP = "app.py"
+set FLASK_DEBUG = 1     
+flask run
