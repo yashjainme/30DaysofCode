@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    {% set new_todos = 2 %}
+    {% if new_todos > 0 %}
+    <p>You have {{new_todos}} tasks left to complete. </p>
+    {% else %}
+    <p>You have nothing left for today! Relax</p>
+    {% endif %}
+</body>
+</html>
