@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% from "macros.jinja2" import todo_list %}
+
+
+{% block content %}
+    
+   <!-- //Jinja filters to call inline functions using the pipe operator  -->
+   {% set new_todos = todos | length %} 
+   {% if new_todos > 0 %}
+   <p class="todo">You have {{new_todos}} tasks left to complete. </p>
+   {{todo_list(todos)}}
+   {% else %}
+   <p class="todo">You have nothing left for today! Relax</p>
+   {% endif %}
+
+ 
+{% endblock %}
